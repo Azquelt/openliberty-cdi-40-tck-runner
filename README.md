@@ -16,6 +16,10 @@ To change the arquillian container parameters (app deploy timeouts etc.), edit s
 
 To run against a different version of the TCK (e.g. a locally built snapshot) edit the pom.xml.
 
+## Debugging
+
+To debug the liberty server, uncomment the lines in `jvm.options`, increase the timeouts in arquillian.xml if necessary, run `mvn test` and attach your debugger to port 8000 when the server starts.
+
 ## Known issues
 
 This doesn't include the full setup with required external resources or the porting package. It's useful for running individual tests locally, but not for running the whole suite.

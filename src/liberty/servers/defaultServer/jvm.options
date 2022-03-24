@@ -1,1 +1,5 @@
 -ea
+# Uncomment to enable debug
+# May also want to adjust timeouts in arquillian.xml if debugging server or application launch
+# -Xdebug
+# -Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=y
