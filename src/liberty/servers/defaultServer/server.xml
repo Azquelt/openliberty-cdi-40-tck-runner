@@ -1,0 +1,15 @@
+<server>
+	<featureManager>
+		<feature>cdi-4.0</feature>
+		<feature>servlet-6.0</feature>
+		<feature>usr:arquillian-support-jakarta-2.0</feature>
+		<feature>localConnector-1.0</feature>
+	</featureManager>
+
+
+	<!-- Uncomment this line to enable coarse tracing -->
+	<!--<logging traceSpecification="FAULTTOLERANCE=event"/> -->
+
+	<!-- Uncomment this line to enable detailed tracing -->
+	<!--<logging traceSpecification="FAULTTOLERANCE=all"/> -->
+</server>
