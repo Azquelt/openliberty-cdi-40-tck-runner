@@ -4,17 +4,19 @@ Adapted from the OpenLiberty integration tests at https://github.com/OpenLiberty
 
 ## How to use
 
+* Clone and `mvn install` the current branch of the [CDI TCK](https://github.com/eclipse-ee4j/cdi-tck)
 * Clone this project
 * Extract a developer build of openliberty into the root of the project
-* Run `mvn test`
+  * remove any arquillian-liberty* files from wlp/lib and wlp/lib/features which may be present
+* Run `mvn verify`
 
 ## Configuration
 
-To change which tests are run, edit the tck-suite.xml file.
+To change which tests are run, edit the `tck-suite.xml` file.
 
-To change the arquillian container parameters (app deploy timeouts etc.), edit src/test/resources/arquillian.xml.
+To change the arquillian container parameters (app deploy timeouts etc.), edit `src/test/resources/arquillian.xml`.
 
-To run against a different version of the TCK (e.g. a locally built snapshot) edit the pom.xml.
+To run against a different version of the TCK edit the pom.xml.
 
 ## Debugging
 
